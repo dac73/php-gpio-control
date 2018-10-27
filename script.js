@@ -24,9 +24,9 @@ function send_req(gpio_pin) {
 		if (request.readyState == 4 && request.status == 200) {
 			data = request.responseText;
 			//update the index pic
-			if ( data == "1" || data == "0") {
-				document.body.style.background = 'gray';				
-				button = green_btn;
+			if ( data == "1" || data == "0") {							
+				button.src = green_btn;
+				document.body.style.background = 'gray';	
 			}
 			else if (!(data.localeCompare("fail"))) {
 				alert("Something went wrong!");

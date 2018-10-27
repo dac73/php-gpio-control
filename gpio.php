@@ -15,6 +15,7 @@ if (isset ( $_GET["pic"] )) {
 		system("gpio write ".$pic." ".$status[0] );
 		sleep(1);
 		// reset gpio status
+		exec ("gpio read ".$pic, $status, $return );
 		if ($status[0] == "0" ) { $status[0] = "1"; }
 		else if ($status[0] == "1" ) { $status[0] = "0"; }
 		//reading pin's status
