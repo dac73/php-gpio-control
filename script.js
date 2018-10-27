@@ -1,6 +1,6 @@
 ﻿var button = document.getElementById("button");
-var red_btn = "data/img/red/red.jpg";
-var green_btn = "data/img/green/green.jpg";
+var red_btn = "data/img/red/red.png";
+var green_btn = "data/img/green/green.png";
 
 function change_pin(gpio_pin) {
 	if (!button.src.includes(green_btn)) {

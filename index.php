@@ -18,11 +18,11 @@
 	exec ("gpio read ".$ctl_gpio_pin, $ctl_gpio_state, $return );
 	
 	if ($ctl_gpio_state == 0 ) {
-		echo ("<img id='button' src='data/img/red/red.jpg' onclick='change_pin (".$ctl_gpio_pin.");'/>");
+		echo ("<img id='button' src='data/img/red/red.png' onclick='change_pin (".$ctl_gpio_pin.");'/>");
 	}
 	else
 	{
-		echo ("<img id='button' src='data/img/green/green.jpg' onclick='change_pin (".$ctl_gpio_pin.");'/>");
+		echo ("<img id='button' src='data/img/green/green.png' onclick='change_pin (".$ctl_gpio_pin.");'/>");
 	}	
 	?>
 	 </div>
