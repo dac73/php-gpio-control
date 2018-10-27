@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Otvorrrrr vrata</title>
+        <title>Garaza</title>
 		<link rel="icon" type="image/png" href="favicon.png"/>
     </head>
  
