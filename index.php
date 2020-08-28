@@ -30,6 +30,16 @@
 	 <div id="kamera" style="width:100%; text-align:center">
 		<?php
 			print '<img src="script.php?url='.urlencode('http://192.168.73.20/tmpfs/auto.jpg').'" />';
+			$url    = "http://192.168.73.20/tmpfs/auto.jpg";
+			$c = curl_init($url);
+			$authString = 'admin:admin';
+			curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($c, CURLOPT_USERPWD, $authString);
+
+			$content = curl_exec($c);
+			$contentType = curl_getinfo($c, CURLINFO_CONTENT_TYPE);
+			header('Content-Type:'.$contentType);
+			print '<img src="'.$content.'" />';
 		?>
 	 </div>
 	<!-- javascript -->
