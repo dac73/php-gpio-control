@@ -32,7 +32,7 @@
 	 </div>
 	 <div id="kamera" style="width:100%; text-align:center">
 		<?php
-			print '<img src="script.php?url='.urlencode('http://192.168.73.20/tmpfs/auto.jpg').'" />';
+			print '<img style="transform:rotate(180deg);" src="script.php?url='.urlencode('http://192.168.73.20/tmpfs/auto.jpg').'" />';
 		?>
 	 </div>
 	<!-- javascript -->
