@@ -27,6 +27,11 @@
 	}	
 	?>
 	 </div>
+	 <div id="kamera" style="width:100%; text-align:center">
+		<?php
+			print '<img src="script.php?url='.urlencode('http://192.168.73.20/tmpfs/auto.jpg').'?'.rand().'" />';
+		?>
+	 </div>
 	<!-- javascript -->
 	<script src="script.js"></script>
     </body>
